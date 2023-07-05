@@ -30,5 +30,6 @@ fs.readFile(filePath, "utf8", (err, data) => {
         console.error(`Error reading file: ${err}`);
         return;
     }
+    console.log("Generation 1:");
     console.log(data);
 });

@@ -2,18 +2,24 @@
   "name": "conway-kata",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/conway.ts",
   "scripts": {
-    "start": "npm run build && node dist/conway.js",
-    "build": "tsc"
+    "start": "nodemon",
+    "build": "tsc",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^29.5.2",
     "@types/node": "^20.3.3",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "jest": "^29.6.1",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
   }
 }
